@@ -51,4 +51,5 @@ const validationErrors = {
   validPic: 'Please enter a valid url for the meal image',
 };
 
-export default validationErrors;
+//export default validationErrors;
+module.exports = validationErrors;

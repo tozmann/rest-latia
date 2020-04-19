@@ -9,7 +9,6 @@
   <link rel="stylesheet" type="text/css" href="css/all.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
-
 <body>
   <header class=" main-header text-white">
     <div id="navbar" class="navbar container clearfix">
@@ -44,26 +43,29 @@
         <h1 class="hero-title">Discover the new definition of delicious</h1>
         <p class="hero-subtitle">Every meal will be your favourite</p>
       </div>
-      <form name="search" method="post" class="hero-form">
-        <input type="search" name="search" id="search" placeholder="I would love to have..." class="hero-search">
-      </form>
     </div>
   </header>
-  <section class="about containter-max clearfix" id="about">
-    <div class="about-image right-float w6">
-      <img src="assets/images/chef.jpg">
+  <section class="meals-section clearfix">
+    <div class="container text-center">
+      <h1 class="section-title margin-bottom-4">Meals</h1>
+      <p>We offer you the best of not just mouth watering meals. We provide you with meals that will keep you healthy
+        and happy.</p>
     </div>
-    <div class="about-text left-float text-center w4">
-      <h1 class="text-center">About</h1>
-      <p>
-        Fast-Food-Fast is your best friend when it comes to taking care of your stomach. We are an online delivery
-        service that takes away the stress of having to worry about what to eat.
-      </p>
-      <p>
-        With Fast-Food-Fast, you don't have to repeat a meal. However, every meal will be your favourite. We deliver to
-        you at your doorstep anytime of the day and anywhere.
-      </p>
-
+    <div class="container margin-top-4" id="meals-container">
+    </div>
+  </section>
+  <section class="howto bg-dark text-white clearfix" id="howto">
+    <h1 class="text-center margin-bottom-4">How to order</h1>
+    <div class="container">
+      <ol class="howto-list">
+        <li>Signup to create an account</li>
+        <li>Click on the meals link</li>
+        <li>On any meal of your choice, click on the order button</li>
+        <li>Select the quantity you want to order</li>
+        <li>Fill in the recipient details</li>
+        <li>Make your payment</li>
+        <li>Just like magic, we deliver to you</li>
+      </ol>
     </div>
   </section>
   <section class="gallery container-max">
@@ -111,30 +113,24 @@
         </figure>
       </li>
     </ul>
-  </section>
-  <section class="howto bg-dark text-white clearfix" id="howto">
-    <h1 class="text-center margin-bottom-4">How to order</h1>
-    <div class="container">
-      <ol class="howto-list">
-        <li>Signup to create an account</li>
-        <li>Click on the meals link</li>
-        <li>On any meal of your choice, click on the order button</li>
-        <li>Select the quantity you want to order</li>
-        <li>Fill in the recipient details</li>
-        <li>Make your payment</li>
-        <li>Just like magic, we deliver to you</li>
-      </ol>
+  </section>  
+  <section class="about containter-max clearfix" id="about">
+    <div class="about-image right-float w6">
+      <img src="assets/images/chef.jpg">
+    </div>
+    <div class="about-text left-float text-center w4">
+      <h1 class="text-center">About</h1>
+      <p>
+        Fast-Food-Fast is your best friend when it comes to taking care of your stomach. We are an online delivery
+        service that takes away the stress of having to worry about what to eat.
+      </p>
+      <p>
+        With Fast-Food-Fast, you don't have to repeat a meal. However, every meal will be your favourite. We deliver to
+        you at your doorstep anytime of the day and anywhere.
+      </p>
     </div>
   </section>
-  <section class="meals-section clearfix">
-    <div class="container text-center">
-      <h1 class="section-title margin-bottom-4">Meals</h1>
-      <p>We offer you the best of not just mouth watering meals. We provide you with meals that will keep you healthy
-        and happy.</p>
-    </div>
-    <div class="container margin-top-4" id="meals-container">
-    </div>
-  </section>
+
   <div id="flash-message" class="text-center flash-message"></div>
   <footer class="bg-dark text-white text-center">
     <p>Developed by Essien, David Itam - for Andela 21</p>

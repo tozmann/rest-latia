@@ -1,5 +1,5 @@
-import rules from './validationRules';
-import validationErrors from './validationErrors';
+const rules = require('./validationRules');
+const validationErrors = require('./validationErrors');
 
 /**
  *    @fileOverview Class to hold general validation methods
@@ -62,4 +62,4 @@ class ValidateHelper {
     return next();
   }
 }
-export default ValidateHelper;
+module.exports = ValidateHelper;

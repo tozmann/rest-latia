@@ -1,6 +1,6 @@
-import rules from '../helpers/validationRules';
-import validationErrors from '../helpers/validationErrors';
-import ValidationHelper from '../helpers/validationHelper';
+const rules = require('../helpers/validationRules');
+const validationErrors = require('../helpers/validationErrors');
+const ValidationHelper = require('../helpers/validationHelper');
 
 /**
  *    @fileOverview Class to validate user input for order
@@ -116,4 +116,5 @@ class ValidateOrder {
     return next();
   }
 }
-export default ValidateOrder;
+
+module.exports = ValidateOrder;

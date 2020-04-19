@@ -1,8 +1,6 @@
-import jwt from 'jsonwebtoken';
-import dotenv from 'dotenv';
-import config from '../config/config';
+const jwt = require('jsonwebtoken');
+const config = require('../config/config');
 
-dotenv.config();
 const { secretKey } = config;
 
 const expirationTime = 86400;
@@ -17,4 +15,4 @@ const generateToken = userObject => jwt.sign({ user: userObject }, secretKey,
     expiresIn: expirationTime,
   });
 
-export default generateToken;
+  module.exports = generateToken;

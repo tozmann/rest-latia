@@ -1,7 +1,7 @@
-import createQuery from './tables.create';
-import destroyQuery from './db.destroy';
-import connection from '../helpers/conn';
-import password from '../helpers/password';
+const createQuery = require('./tables.create');
+const destroyQuery = require('./db.destroy');
+const connection = require('../helpers/conn');
+const password = require('../helpers/password');
 
 const client = connection();
 client.connect();

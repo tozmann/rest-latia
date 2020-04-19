@@ -1,2 +1,2 @@
-import './users';
-import './orders';
+const users = require('./users');
+const orders = require('./orders');

@@ -1,9 +1,7 @@
-import jwt from 'jsonwebtoken';
-import dotenv from 'dotenv';
-import config from '../config/config';
-import validationErrors from '../helpers/validationErrors';
+const jwt = require('jsonwebtoken');
+const config = require('../config/config');
+const validationErrors = require('../helpers/validationErrors');
 
-dotenv.config();
 const { secretKey } = config;
 
 /**
@@ -64,4 +62,4 @@ class UserAuthentication {
   }
 }
 
-export default UserAuthentication;
+module.exports = UserAuthentication;

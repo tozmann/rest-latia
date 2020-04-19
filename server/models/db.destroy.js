@@ -6,4 +6,4 @@ const itemsDestroy = 'DROP TABLE IF EXISTS items CASCADE; ';
 
 const destroyQuery = `${itemsDestroy}${mealsDestroy}${recipientDestroy}${ordersDestroy}${usersDestroy}`;
 
-export default destroyQuery;
+module.exports = destroyQuery;

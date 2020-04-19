@@ -16,51 +16,46 @@ https://fast-food-fast-essien.herokuapp.com/
 ## API Documentation
 https://fast-food-fast-essien.herokuapp.com/api-docs
 
-## Table of Content
- * [Getting Started](#getting-started)
-
- * [Prerequisites for installation](#Prerequisites)
- 
- * [Installation](#installation)
-
- * [Test](#test)
- 
- * [ API End Points Test Using Postman](#api-end-points)
-
- * [Coding Style](#coding-style)
- 
- * [Features](#features)
- 
- * [Built With](#built-with)
- 
- * [Author](#author)
-
- * [License](#lincense)
-
- * [Acknowledgement](#acknowledgement)
-
 ## Getting Started
 
-### Prerequisites for installation
-1. Node js
-2. Express
-3. Git
-
 ### Installation
-1. Clone this repository into your local machine:
+1. Install dependencies 
 ```
-e.g git clone https://github.com/davidshare/Fast-Food-Fast
+$ sudo apt-get install git
+$ sudo apt-get install curl
+$ curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+$ sudo apt-get install nodejs
 ```
-2. Install dependencies 
+2. Install postgresql 
 ```
-e.g npm install.
+$ sudo apt install postgresql postgresql-contrib
+$ sudo -i -u postgres
+$ psql
+postgres=# \l
+postgres=# \du
+postgres=# \q
+$ createuser --interactive
+$ psql -d postgres
+postgres=# \conninfo
 ```
-3. Start the application by running the start script.
-
-e.g npm start
-
-4. Install postman to test all endpoints on port 3000.
-
+3. Install Nginx
+```
+$ sudo apt install nginx
+$ sudo chmod -R 777 /etc/nginx/sites-available/
+$ sudo nano /etc/nginx/sites-available/latia
+$ sudo systemctl status nginx   
+$ sudo systemctl start nginx
+$ sudo service nginx restart
+```
+4. Clone this repository into your local machine:
+```
+$ git clone https://github.com/davidshare/Fast-Food-Fast
+```
+5. Start the application by running the start script.
+6. ubuntu init
+```
+ $ sudo nano /etc/init/latia.com.conf
+ ```
 ### Test
 run test using 'npm test'.
 
@@ -99,9 +94,6 @@ run test using 'npm test'.
  
 </table>
 
-### Coding Style
-* Airbnb style guide. 
-
 ## Features
 
  ### Admin
@@ -128,16 +120,3 @@ run test using 'npm test'.
 * css: It is used for styling the frontend.
 
 * Vannila Javascript: It is used for scripting the client side.
-
-
-## Author
-* David Essien
-
-## License
-This project is licensed under the GNU General Public License v3.0 - see the LICENSE.md file for details.
-
-## Acknowledgement
-I acknowledge the individuals from the organisation and groups below. They were a great source of motivation in completing this project.
-* Andela.
-* Andela Learning Facilitators.
-* Andela 21

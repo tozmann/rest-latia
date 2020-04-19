@@ -1,7 +1,7 @@
-import connection from '../helpers/conn';
-import passwordHelper from '../helpers/password';
-import generateToken from '../helpers/token';
-import validationErrors from '../helpers/validationErrors';
+const connection = require('../helpers/conn');
+const passwordHelper = require('../helpers/password');
+const generateToken = require('../helpers/token');
+const validationErrors = require('../helpers/validationErrors');
 
 const client = connection();
 client.connect();
@@ -203,4 +203,5 @@ class UsersController {
   }
 }
 
-export default UsersController;
+//export default UsersController;
+module.exports = UsersController;

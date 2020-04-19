@@ -1,17 +1,13 @@
 // import modules
-import Express from 'express';
-import bodyParser from 'body-parser';
-import dotenv from 'dotenv';
-import cors from 'cors';
-import swaggerUi from 'swagger-ui-express';
-import swaggerDocument from './fast.json';
-import routes from './server/routes';
-
-dotenv.config();
+const Express = require('express');
+const http = require('http');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const routes = require('./server/routes');
 
 // declare constants
 const app = new Express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 // declare middleware
 app.use(cors());
@@ -19,7 +15,6 @@ app.use(bodyParser.urlencoded({
   extended: false,
 }));
 app.use(bodyParser.json());
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use('/', Express.static('UI'));
 
 routes(app);
@@ -30,7 +25,6 @@ app.all('*', (req, res) => res.status(404).json({
   message: 'The URL you are trying to access does not exist. Please enter a valid url',
 }));
 
-// listen to app port
-app.listen(port, () => console.log(`App listening on port ${port}`));
-
-export default app;
+// EL SERVIDOR ESTA ESCUCHANDO PETICIONES
+const server = http.createServer(app);
+server.listen(port, () => console.log(`App listening on port ${port}`));

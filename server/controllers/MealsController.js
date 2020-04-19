@@ -1,5 +1,5 @@
-import connection from '../helpers/conn';
-import validationErrors from '../helpers/validationErrors';
+const connection = require('../helpers/conn');
+const validationErrors = require('../helpers/validationErrors');
 
 const client = connection();
 client.connect();
@@ -248,4 +248,4 @@ class MealsController {
   }
 }
 
-export default MealsController;
+module.exports = MealsController;

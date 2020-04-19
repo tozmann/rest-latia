@@ -1,8 +1,8 @@
-import chaiHttp from 'chai-http';
-import chai from 'chai';
-import app from '../../app';
-import testData from './testData';
-import validationErrors from '../helpers/validationErrors';
+const chaiHttp = require('chai-http');
+const chai = require('chai');
+const app = require('../../app');
+const testData = require('./testData');
+const validationErrors = require('../helpers/validationErrors');
 
 const { expect } = chai;
 chai.use(chaiHttp);

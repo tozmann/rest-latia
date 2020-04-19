@@ -1,5 +1,5 @@
-const baseUrl = 'https://fast-food-fast-essien.herokuapp.com/api/v1/';
-const appUrl = 'https://fast-food-fast-essien.herokuapp.com/';
+const baseUrl = 'http://ec2-18-236-154-171.us-west-2.compute.amazonaws.com:8080/api/v1/';
+const appUrl = 'http://ec2-18-236-154-171.us-west-2.compute.amazonaws.com:8080/';
 // const appUrl = 'http://localhost:3000/';
 // const baseUrl = 'http://localhost:3000/api/v1/';
 const CLOUDINARY_UPLOAD_PATH = 'https://api.cloudinary.com/v1_1/degd8xqnf/image/upload';

@@ -1,7 +1,7 @@
-import connection from '../helpers/conn';
-import rules from '../helpers/validationRules';
-import validationErrors from '../helpers/validationErrors';
-import ValidationHelper from '../helpers/validationHelper';
+const connection = require('../helpers/conn');
+const rules = require('../helpers/validationRules');
+const validationErrors = require('../helpers/validationErrors');
+const ValidationHelper = require('../helpers/validationHelper');
 
 const client = connection();
 client.connect();
@@ -126,4 +126,4 @@ class ValidateUser {
   }
 }
 
-export default ValidateUser;
+module.exports = ValidateUser;

@@ -12,11 +12,11 @@ const rules = {
   validMeal: /^[a-zA-Z][a-zA-Z0-9\s?.,:]+$/,
   validDesc: /^[a-zA-Z][a-zA-Z0-9!$&%\\\s`()*.+,'-]+$/,
   mealLength: /^[a-zA-Z][a-zA-Z0-9\s]{5,50}$/,
-  descLength: /^[a-zA-Z][a-zA-Z0-9!$&%\\\s`()*.+,'-]{39,255}$/,
+  descLength: /^[a-zA-Z][a-zA-Z0-9!$&%\\\s`()*+,'-]{39,255}$/,
   validUrl: /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/,
 };
 
-export default rules;
+module.exports = rules;
 
 // url regex: https://www.regextester.com/93652
 // email regex: https://www.regextester.com/1922

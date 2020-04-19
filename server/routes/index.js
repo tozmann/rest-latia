@@ -1,10 +1,10 @@
-import OrdersController from '../controllers/OrdersController';
-import UsersController from '../controllers/UsersController';
-import MealsController from '../controllers/MealsController';
-import ValidateOrder from '../middleware/orderValidator';
-import ValidateUser from '../middleware/userValidator';
-import ValidateMeals from '../middleware/mealValidator';
-import UserAuthentication from '../middleware/userauthenticate';
+const OrdersController = require('../controllers/OrdersController');
+const UsersController = require('../controllers/UsersController');
+const MealsController = require('../controllers/MealsController');
+const ValidateOrder = require('../middleware/orderValidator');
+const ValidateUser = require('../middleware/userValidator');
+const ValidateMeals = require('../middleware/mealValidator');
+const UserAuthentication = require('../middleware/userauthenticate');
 
 /**
  * @fileOverview index file for routes - it hosts all routes
@@ -44,4 +44,7 @@ const routes = (app) => {
   app.delete('/api/v1/menu/:mealId', UserAuthentication.authenticateAdmin, ValidateMeals.validateMealId, MealsController.deleteMeal);
   app.delete('/api/v1/users', UserAuthentication.authenticateAdmin, UsersController.deleteUsers);
 };
-export default routes;
+
+//export default routes;
+
+module.exports = routes;

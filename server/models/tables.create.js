@@ -64,4 +64,4 @@ const createOrderItemsTable = `
   );
 `;
 const createQuery = `${createUsersTable}${createOrdersTable}${createRecipientTable}${createMealsTable}${createOrderItemsTable}`;
-export default createQuery;
+module.exports = createQuery;
