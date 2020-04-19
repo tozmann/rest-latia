@@ -49,7 +49,7 @@ $ sudo service nginx restart
 ```
 4. Clone this repository into your local machine:
 ```
-$ git clone https://github.com/davidshare/Fast-Food-Fast
+$ git clone https://github.com/tozmann/rest-latia.git
 ```
 5. Start the application by running the start script.
 6. ubuntu init
